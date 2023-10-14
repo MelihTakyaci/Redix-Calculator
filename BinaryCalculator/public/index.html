@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./style.css">
+    <title>Radix Calculator</title>
+</head>
+<body>
+    <header>
+        <div style="display: flex; align-items: center;">
+        <div class="logo"></div>
+        <div class="logotext">Mint</div>
+        </div>
+        <div class="hh">
+            Number System Conversion Calculator
+        </div>
+        <div></div>
+    </header>
+    <div class="container">
+        <div class="inputs">
+            <div class="numtype">
+                <div>Decimal</div>
+                <input type="text" id="decimal" oninput="validateDecimalInput(this)">
+            </div>
+            <div class="numtype">
+                <div>Octal</div>
+                <input type="text" id="octal" oninput="validateOctalInput(this)">
+            </div>
+            <div class="numtype">
+                <div>Hexadecimal</div>
+                <input type="text" id="hexadecimal" oninput="validateHexaDecimalInput(this)">
+            </div>
+            <div class="numtype">
+                <div>Binary</div>
+                <input type="text" id="binary" oninput="validateInput(this)">
+            </div>
+        </div>
+        <div class="table">
+            <img src="../img/table.png">
+        </div>
+    </div>
+</body>
+    <script src="./javascript/wrongcharacter.js"></script>
+    <script src="./javascript/calculators/allcalculators.js"></script>
+</html>
